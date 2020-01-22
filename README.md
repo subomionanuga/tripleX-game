@@ -7,6 +7,7 @@ A very simple terminal based game which teaches the basics of C++ while making a
 ### To play
 
 - clone repo
+- Navigate to triplex directory
 - Run `g++ triplex.cpp -o triplex` in your terminal to complile the code
 - Open game file with `./triplex`
 - Play game as prompted by terminal
