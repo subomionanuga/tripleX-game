@@ -3,7 +3,7 @@
 
 void PrintIntroduction(int Difficulty)
 {
-  std::cout << "You are a secret agent breaking into a level " << Difficulty;
+  std::cout << "\nYou are a secret agent breaking into a level " << Difficulty;
   std::cout << " secure server room\nYou need to enter the correct codes to continue...\n";
 }
 
@@ -37,7 +37,9 @@ bool PlayGame(int Difficulty)
   }
   else
   {
-    std::cout << "\nShame, Agent. You failed...miserably. Try again or end your career here.\n";
+    std::cout << "\nShame, Agent. You failed...miserably. The answer was\n";
+    std::cout << CodeA << CodeB << CodeC << std::endl;
+    std::cout << "Try again or end your career here.\n";
     return false;
   }
 }
