@@ -31,12 +31,12 @@ bool PlayGame(int Difficulty)
 
   if (GuessProduct == CodeProduct && GuessSum == CodeSum)
   {
-    std::cout << "\nCongratulations, Secret Agent\n";
+    std::cout << "\nWell done, Agent. Move on to the next phase.\n";
     return true;
   }
   else
   {
-    std::cout << "\nShame, Agent. You failed...miserably\n";
+    std::cout << "\nShame, Agent. You failed...miserably. Try again or end your career here.\n";
     return false;
   }
 }
@@ -49,7 +49,7 @@ int main()
   {
     bool bLevelComplete = PlayGame(LevelDifficulty);
     std::cin.clear();  //clears any errors
-    std::cin.ignore(); //Discatds the buffer
+    std::cin.ignore(); //Discards the buffer
 
     if (bLevelComplete)
     {
@@ -57,5 +57,6 @@ int main()
     }
   }
 
+  std::cout << "\nCongratulations, Agent. Mission accomplished\n";
   return 0;
 }
